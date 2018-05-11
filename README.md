@@ -1,2 +1,2 @@
 # GitRepertory
-a tool for code and decode
+A repetory for my c# projects
