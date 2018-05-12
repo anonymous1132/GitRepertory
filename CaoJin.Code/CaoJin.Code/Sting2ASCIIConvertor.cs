@@ -18,7 +18,7 @@ namespace CaoJin.Code
             if (string.IsNullOrEmpty(_textboxcontent))
             { throw new TextBoxInputException("输入为空"); }
            
-                byte[] b = AsciiConvertHelper.ConvertToAscii(TextBoxContent);
+                byte[] b = AsciiConvertHelper.ConvertToBytes(TextBoxContent);
                 foreach (byte lb in b)
                 {
                     _textblockcontent = _textblockcontent + lb.ToString() + " ";

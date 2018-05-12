@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace CaoJin.Code
 {
-   public class AsciiConvertHelper
+    public class UnicodeConvertHelper
     {
         public static byte[] ConvertToBytes(string sourcestr)
         {
-            return Encoding.ASCII.GetBytes(sourcestr);
+            return Encoding.Unicode.GetBytes(sourcestr);
         }
         public static string ConvertToString(byte[] sourcebyte)
         {
-            return Encoding.ASCII.GetString(sourcebyte);
+            return Encoding.Unicode.GetString(sourcebyte);
         }
     }
 }

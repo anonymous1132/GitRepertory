@@ -58,7 +58,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ConvertModel.cs" />
+    <Compile Include="String2ASCIIHexConvertor.cs" />
+    <Compile Include="String2UnicodeConvertor.cs" />
+    <Compile Include="String2UnicodeHexConvertor.cs" />
     <Compile Include="TextBoxInputException.cs" />
+    <Compile Include="UnicodeConvertHelper.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,7 +72,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AsciiConvertHelper.cs" />
-    <Compile Include="ASCIIConvertor.cs" />
+    <Compile Include="Sting2ASCIIConvertor.cs" />
     <Compile Include="IConvertable.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

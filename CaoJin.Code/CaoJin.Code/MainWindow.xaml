@@ -12,17 +12,20 @@
             <RowDefinition Height="40*"/>
             <RowDefinition Height="213*"/>
         </Grid.RowDefinitions>
-        <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   BorderThickness="1" BorderBrush="Black" Margin="5,5,4.6,4.8" Name="textbox"/>
+        <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   BorderThickness="1" BorderBrush="Black" Margin="5,5,4.6,4.8" Name="textbox"/>
         <Border BorderThickness="1" BorderBrush="Black" Grid.Row="2" Margin="5">
             <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextWrapping="Wrap" Name="textblock"/>
         </Border>
         <WrapPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <ComboBox Name="combobox">
-                <ComboBoxItem IsSelected="True">字符转16进制ASCII
+                <ComboBoxItem IsSelected="True">字符转ASCII对应10进制
                 </ComboBoxItem>
-                <ComboBoxItem>字符转10进制ASCII
+                <ComboBoxItem>字符转ASCII对应16进制
                 </ComboBoxItem>
-                
+                <ComboBoxItem>字符转Unicode对应10进制
+                </ComboBoxItem>
+                <ComboBoxItem>字符转Unicode对应16进制
+                </ComboBoxItem>
             </ComboBox>
 
             <Button  Content="获取结果" Margin="10 0 0 0" Click="Button_Click"/>

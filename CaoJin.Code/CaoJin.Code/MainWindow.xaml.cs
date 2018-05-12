@@ -33,18 +33,28 @@ namespace CaoJin.Code
                 case 0:
                     cm = new Sting2ASCIIConvertor();
                     break;
+                case 1:
+                    cm = new String2ASCIIHexConvertor();
+                    break;
+                case 2:
+                    cm = new String2UnicodeConvertor();
+                    break;
+                case 3:
+                    cm = new String2UnicodeHexConvertor();
+                    break;
                 default:
                     cm = new ConvertModel();
                     break;
             }
 
-            cm.TextBoxContent = (new TextRange(textbox.Document.ContentStart, textbox.Document.ContentEnd)).Text;
+            cm.TextBoxContent = textbox.Text;
             try
             {
                 cm.GetTextBlockContent();
             }
             catch (TextBoxInputException)
             {
+                textblock.Text = "";
                 return;
             }
 
