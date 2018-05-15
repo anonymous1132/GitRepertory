@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2B530CF-F772-49FA-9523-D2EFA03F9A56}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LookUpIp</RootNamespace>
+    <AssemblyName>LookUpIp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>feiji.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Utility">
+      <HintPath>..\lib\System.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AssetPage.xaml.cs">
+      <DependentUpon>AssetPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BjbQueryPage.xaml.cs">
+      <DependentUpon>BjbQueryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classess\EDPDecrypt.cs" />
+    <Compile Include="Classess\EDPSqlOper.cs" />
+    <Compile Include="Classess\HNIPS.cs" />
+    <Compile Include="Classess\IHNIP.cs" />
+    <Compile Include="Classess\UseSshOper.cs" />
+    <Compile Include="Classess\XmlHelper.cs" />
+    <Compile Include="DyjQueryPage.xaml.cs">
+      <DependentUpon>DyjQueryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EDPQueryPage.xaml.cs">
+      <DependentUpon>EDPQueryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extention\ControlAttachProperty.cs" />
+    <Compile Include="FwqQueryPage.xaml.cs">
+      <DependentUpon>FwqQueryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IPPage.xaml.cs">
+      <DependentUpon>IPPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IPUserPage.xaml.cs">
+      <DependentUpon>IPUserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="JhjQueryPage.xaml.cs">
+      <DependentUpon>JhjQueryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OperatePage.xaml.cs">
+      <DependentUpon>OperatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherQueryPage.xaml.cs">
+      <DependentUpon>OtherQueryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="setuserWindow.xaml.cs">
+      <DependentUpon>setuserWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\BJBWindow.xaml.cs">
+      <DependentUpon>BJBWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\DYJWindow.xaml.cs">
+      <DependentUpon>DYJWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\NETWindow.xaml.cs">
+      <DependentUpon>NETWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\TSJWindow.xaml.cs">
+      <DependentUpon>TSJWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SubWindows\YZDWindow.xaml.cs">
+      <DependentUpon>YZDWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TsjQueryPage.xaml.cs">
+      <DependentUpon>TsjQueryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UploadPage.xaml.cs">
+      <DependentUpon>UploadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\BJBViewModel.cs" />
+    <Compile Include="ViewModel\DYJViewModel.cs" />
+    <Compile Include="ViewModel\EdpDeviceViewModel.cs" />
+    <Compile Include="ViewModel\EmployeeViewModel.cs" />
+    <Compile Include="ViewModel\IPInfoViewModel.cs" />
+    <Compile Include="ViewModel\NETViewModel.cs" />
+    <Compile Include="ViewModel\TSJViewModel.cs" />
+    <Compile Include="ViewModel\XSQViewModel.cs" />
+    <Compile Include="ViewModel\YZDViewModel.cs" />
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XsqQueryPage.xaml.cs">
+      <DependentUpon>XsqQueryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YzdQueryPage.xaml.cs">
+      <DependentUpon>YzdQueryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="{Core}\Common\BaseNotifyPropertyChanged.cs" />
+    <Compile Include="{Core}\Common\ConsoleAsynNotify.cs" />
+    <Compile Include="{Core}\Common\DefaultAsynNotify.cs" />
+    <Compile Include="{Core}\Common\Exceptions.cs" />
+    <Compile Include="{Core}\Common\FileAsynNotify.cs" />
+    <Compile Include="{Core}\Common\IAsynNotify.cs" />
+    <Compile Include="{Core}\ControlAttachProperty.cs" />
+    <Compile Include="{Core}\ControlExtession.cs" />
+    <Compile Include="{Core}\Messenger.cs" />
+    <Compile Include="{Core}\RelayCommand.cs" />
+    <Page Include="AssetPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BjbQueryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DyjQueryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EDPQueryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FwqQueryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IPPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IPUserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="JhjQueryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Extention\ListSortDirector.cs" />
+    <Compile Include="Extention\ListViewBehavior.cs" />
+    <Compile Include="Extention\SortInfo.cs" />
+    <Compile Include="Extention\UIElementAdorner.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="OperatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherQueryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="setuserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\BJBWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\DYJWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\NETWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\TSJWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubWindows\YZDWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\FIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\ScrollViewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TsjQueryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UploadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="XsqQueryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YzdQueryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Overridelistview.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <Resource Include="Resources\iconfont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AutoUpdater\AutoUpdater.csproj">
+      <Project>{4CEADF71-8032-47FE-A357-D6F4023261CF}</Project>
+      <Name>AutoUpdater</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CJComLibrary\CJComLibrary.csproj">
+      <Project>{F5338AC8-AEC6-4B80-B368-AAEB2810A8B7}</Project>
+      <Name>CJComLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="feiji.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\img\topbg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\img\11-Printer-HP-LaserJet-1100-Series.png" />
+    <Resource Include="Themes\img\161-network-switch.png" />
+    <Resource Include="Themes\img\176-computer-4.png" />
+    <Resource Include="Themes\img\177-computer-laptop-2.png" />
+    <Resource Include="Themes\img\210-video-display-3.png" />
+    <Resource Include="Themes\img\topbg.jpg" />
+    <Resource Include="Themes\img\Windows8.1-258.png" />
+    <Resource Include="Themes\img\Windows8.1-2582.png" />
+    <Resource Include="Themes\img\Windows8.1-259.png" />
+    <Resource Include="Themes\img\Windows8.1-2592.png" />
+    <Resource Include="Themes\img\Windows8.1-267.png" />
+    <Resource Include="Themes\img\Windows8.1-304.png" />
+    <Resource Include="Themes\img\Windows8.1-3041.png" />
+    <Resource Include="Themes\img\Windows8.1-330.png" />
+    <Resource Include="Themes\img\Windows8.1-3302.png" />
+    <Resource Include="Themes\img\Windows8.1-372.png" />
+    <Resource Include="Themes\img\Windows8.1-3722.png" />
+    <Resource Include="Themes\img\Windows8.1-387.png" />
+    <Resource Include="Themes\img\Windows8.1-3872.png" />
+    <Resource Include="Themes\img\Windows8.1-394.png" />
+    <Resource Include="Themes\img\Windows8.1-3942.png" />
+    <Resource Include="Themes\img\Windows8.1-397.png" />
+    <Resource Include="Themes\img\Windows8.1-3972.png" />
+    <Resource Include="Themes\img\Windows8.1-416.png" />
+    <Resource Include="Themes\img\Windows8.1-417.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\img\btn_close.png" />
+    <Resource Include="Themes\img\btn_close_active.png" />
+    <Resource Include="Themes\img\btn_close_hover.png" />
+    <Resource Include="Themes\img\btn_max.png" />
+    <Resource Include="Themes\img\btn_max_active.png" />
+    <Resource Include="Themes\img\btn_max_hover.png" />
+    <Resource Include="Themes\img\btn_min.png" />
+    <Resource Include="Themes\img\btn_min_active.png" />
+    <Resource Include="Themes\img\btn_min_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\img\toptitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\img\topbg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\img\iphone-bk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\img\search.png" />
+    <Resource Include="Themes\img\search_click.png" />
+    <Resource Include="Themes\img\search_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\img\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\img\envelope_128px_1205690_easyicon.net.ico" />
+    <Resource Include="Themes\img\zhengfangti.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\img\earth.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="xml\config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

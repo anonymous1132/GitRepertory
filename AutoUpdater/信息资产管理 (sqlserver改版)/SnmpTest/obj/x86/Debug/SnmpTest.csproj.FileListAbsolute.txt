@@ -1,0 +1,63 @@
+C:\Users\caojin\Desktop\信息资产管理\SnmpTest\bin\Debug\SnmpTest.exe
+C:\Users\caojin\Desktop\信息资产管理\SnmpTest\bin\Debug\SnmpTest.pdb
+C:\Users\caojin\Desktop\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.dll
+C:\Users\caojin\Desktop\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.pdb
+C:\Users\caojin\Desktop\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.xml
+C:\Users\caojin\Desktop\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.csprojResolveAssemblyReference.cache
+C:\Users\caojin\Desktop\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.exe
+C:\Users\caojin\Desktop\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.pdb
+C:\Users\caojin\Desktop\信息资产管理\SnmpTest\bin\Debug\CJComLibrary.dll
+C:\Users\caojin\Desktop\信息资产管理\SnmpTest\bin\Debug\CJComLibrary.pdb
+G:\信息资产管理\SnmpTest\bin\Debug\SnmpTest.exe
+G:\信息资产管理\SnmpTest\bin\Debug\SnmpTest.pdb
+G:\信息资产管理\SnmpTest\bin\Debug\CJComLibrary.dll
+G:\信息资产管理\SnmpTest\bin\Debug\CJComLibrary.pdb
+G:\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.pdb
+G:\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.xml
+G:\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.csprojResolveAssemblyReference.cache
+G:\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.exe
+G:\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.pdb
+H:\信息资产管理\SnmpTest\bin\Debug\SnmpTest.exe
+H:\信息资产管理\SnmpTest\bin\Debug\SnmpTest.pdb
+H:\信息资产管理\SnmpTest\bin\Debug\CJComLibrary.dll
+H:\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.dll
+H:\信息资产管理\SnmpTest\bin\Debug\CJComLibrary.pdb
+H:\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.pdb
+H:\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.xml
+H:\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.csprojResolveAssemblyReference.cache
+H:\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.exe
+H:\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.pdb
+G:\未完成\信息资产管理\SnmpTest\bin\Debug\SnmpTest.exe
+G:\未完成\信息资产管理\SnmpTest\bin\Debug\SnmpTest.pdb
+G:\未完成\信息资产管理\SnmpTest\bin\Debug\CJComLibrary.dll
+G:\未完成\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.dll
+G:\未完成\信息资产管理\SnmpTest\bin\Debug\CJComLibrary.pdb
+G:\未完成\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.pdb
+G:\未完成\信息资产管理\SnmpTest\bin\Debug\SnmpSharpNet.xml
+G:\未完成\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.csprojResolveAssemblyReference.cache
+G:\未完成\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.exe
+G:\未完成\信息资产管理\SnmpTest\obj\x86\Debug\SnmpTest.pdb
+G:\未完成\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\SnmpTest.exe
+G:\未完成\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\SnmpTest.pdb
+G:\未完成\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\CJComLibrary.dll
+G:\未完成\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\SnmpSharpNet.dll
+G:\未完成\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\CJComLibrary.pdb
+G:\未完成\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\SnmpSharpNet.pdb
+G:\未完成\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\SnmpSharpNet.xml
+G:\未完成\信息资产管理 (sqlserver改版)\SnmpTest\obj\x86\Debug\SnmpTest.csprojResolveAssemblyReference.cache
+G:\未完成\信息资产管理 (sqlserver改版)\SnmpTest\obj\x86\Debug\SnmpTest.exe
+G:\未完成\信息资产管理 (sqlserver改版)\SnmpTest\obj\x86\Debug\SnmpTest.pdb
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\SnmpTest.exe
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\SnmpTest.pdb
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\CJComLibrary.dll
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\SnmpSharpNet.dll
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\Tamir.SharpSSH.dll
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\DiffieHellman.dll
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\Org.Mentalis.Security.dll
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\CJComLibrary.pdb
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\SnmpSharpNet.pdb
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\SnmpSharpNet.xml
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\bin\Debug\Tamir.SharpSSH.pdb
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\obj\x86\Debug\SnmpTest.csprojResolveAssemblyReference.cache
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\obj\x86\Debug\SnmpTest.exe
+G:\未完成\AutoUpdater\信息资产管理 (sqlserver改版)\SnmpTest\obj\x86\Debug\SnmpTest.pdb

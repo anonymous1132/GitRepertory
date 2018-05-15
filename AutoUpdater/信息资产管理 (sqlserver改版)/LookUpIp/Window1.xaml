@@ -1,0 +1,70 @@
+﻿<Window x:Class="LookUpIp.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="海宁信息资产管理" Height="800" Width="1000" WindowStyle="None" Background="Transparent" AllowsTransparency="True" MouseDown="Window_MouseDown" Icon="/LookUpIp;component/feiji.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        
+        <Border BorderThickness="1" BorderBrush="Gray"  CornerRadius="10,10,0,0"  >
+                    <Border.Background>
+                        <ImageBrush ImageSource="Themes/img/topbg.jpg" Stretch="UniformToFill" TileMode="None" />
+                    </Border.Background>
+                    <StackPanel Height="80" Orientation="Horizontal" Focusable="True" >
+
+                        <RadioButton Width="80" Height="70" Margin="2,5" Cursor="Hand" Name="AssetManageButton" IsChecked="True" VerticalAlignment="Top" Click="AssetManageButton_Click" Style="{DynamicResource RDOButton}" SnapsToDevicePixels="True">
+                            <StackPanel HorizontalAlignment="Center">
+                                <Image Width="35" Height="35" Margin="0,5" Source="/Themes/img/176-computer-4.png"/>
+                                <TextBlock><Run Text="资产管理" Foreground="White"/></TextBlock>
+                            </StackPanel>
+                        </RadioButton>
+
+
+                        <RadioButton Width="80" Height="70" Margin="2,5"  Cursor="Hand" Name="IPQueryButton" VerticalAlignment="Top" Click="IPQueryButton_Click" Style="{DynamicResource RDOButton}" SnapsToDevicePixels="True">
+                            <StackPanel HorizontalAlignment="Center">
+                                <Image Width="35" Height="35" Margin="0,5" Source="/Themes/img/Windows8.1-258.png"/>
+                                <TextBlock><Run Text="IP查询" Foreground="White"/></TextBlock>
+                            </StackPanel>
+                        </RadioButton>
+
+                <RadioButton Width="80" Height="70" Margin="2,5"  Cursor="Hand" Name="GKQueryButton" VerticalAlignment="Top" Click="GKQueryButton_Click" Style="{DynamicResource RDOButton}" SnapsToDevicePixels="True">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image Width="35" Height="35" Margin="0,5" Source="/Themes/img/earth.ico"/>
+                        <TextBlock><Run Text="注册查询" Foreground="White"/></TextBlock>
+                    </StackPanel>
+                </RadioButton>
+
+                <RadioButton Width="80" Height="70" Margin="2,5"  Cursor="Hand" Name="OperateButton" VerticalAlignment="Top" Click="OperateButton_Click" Style="{DynamicResource RDOButton}" SnapsToDevicePixels="True">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image Width="35" Height="35" Margin="0,5" Source="/Themes/img/zhengfangti.ico"/>
+                        <TextBlock><Run Text="流程申请" Foreground="White"/></TextBlock>
+                    </StackPanel>
+                </RadioButton>
+            </StackPanel>
+        </Border>
+        <Image Source="Themes/img/toptitle.png" HorizontalAlignment="Right"/>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" Orientation="Horizontal">
+            <Button Name="btn_min" Style="{StaticResource MinButton}" Click="btn_min_Click"/>
+            <!--<Button Style="{StaticResource MaxButton}" IsEnabled="False"/>-->
+            <Button Name="btn_close" Style="{StaticResource CloseButton}" Click="btn_close_Click"/>
+        </StackPanel>
+
+        <Border Grid.Row="1" Grid.RowSpan="2" BorderThickness="1" BorderBrush="Gray"   VerticalAlignment="Stretch" CornerRadius="0,0,10,10">
+            <Border.Background>
+                <ImageBrush ImageSource="Themes/img/topbg3.jpg" Stretch="UniformToFill" TileMode="None" />
+            </Border.Background>
+            <Frame Name="frame" Height="620" Source="AssetPage.xaml" Width="970" NavigationUIVisibility="Hidden" >
+            </Frame>
+            
+        </Border>
+
+        <TextBlock Text="当前版本：v1.1.0   更新日期:2017.09.19" VerticalAlignment="Center" Margin="10 0 0 0" Foreground="White" Grid.Row="2"/>
+
+
+
+    </Grid>
+    
+</Window>

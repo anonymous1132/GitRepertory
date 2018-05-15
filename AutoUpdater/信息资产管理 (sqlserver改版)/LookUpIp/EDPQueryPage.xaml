@@ -1,0 +1,116 @@
+﻿<Page x:Class="LookUpIp.EDPQueryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ext="clr-namespace:LookUpIp.Extention"
+      Width="1000" Height="610" 
+	Title="国网管控信息查询" Loaded="Page_Loaded">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"  >
+            <ComboBox Name="comboBox_queryitem" Height="20" Width="100" Style="{StaticResource Comboxstyle}"  SelectionChanged="comboBox_queryitem_SelectionChanged">
+                <ComboBoxItem Content="全部" IsSelected="True"  />
+                <!--<ComboBoxItem Content="IP"  />
+                <ComboBoxItem Content="是否使用"  />
+                <ComboBoxItem Content="是否登记"  />
+                <ComboBoxItem Content="登记部门"  />
+                <ComboBoxItem Content="登记用户"  />
+                <ComboBoxItem Content="登记设备类型"/>
+                <ComboBoxItem Content="所属交换机"/>-->
+            </ComboBox>
+
+            <ComboBox Name="comboBox_input" Height="20" Width="200" Style="{StaticResource Comboxstyle}" IsEditable="True" HorizontalContentAlignment="Left" IsEnabled="False" >
+            </ComboBox>
+            <Button Name="button_quickfind"  HorizontalAlignment="Center" VerticalAlignment="Top"   Width="50" Height="26" IsDefault="True" Style="{StaticResource InquiryBtn}" Click="button_quickfind_Click" />
+
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" VerticalAlignment="Top" HorizontalAlignment="Center" Width="auto">
+            <namespac:SubListView  
+                            xmlns:namespac="clr-namespace:LookUpIp"
+                            ext:ListViewBehavior.HeaderSort="True" ItemsSource="{Binding}"  x:Name="listView_jcxx"  HorizontalContentAlignment="Center"  MouseRightButtonDown="listView_jcxx_MouseRightButtonDown" MouseRightButtonUp="listView_jcxx_MouseRightButtonUp"
+
+VerticalContentAlignment="Center"   Foreground="Black" Height="500" Width="920">
+                <namespac:SubListView.Resources>
+                    <ControlTemplate x:Key="tmpForThumb" TargetType="{x:Type Thumb}">
+                        <Border>
+                            <Rectangle Width="1" Name="rec">
+                                <Rectangle.Fill>
+                                    <LinearGradientBrush StartPoint="0.5,0.3" EndPoint="1,1">
+                                        <GradientStop Color="Teal" Offset="0.22"/>
+                                        <GradientStop Color="White" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </Border>
+                    </ControlTemplate>
+
+                    <Style TargetType="{x:Type GridViewColumnHeader}">
+
+                        <!--<Setter Property="OverridesDefaultStyle" Value="True"/>-->
+
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type GridViewColumnHeader}">
+                                    <Grid Name="g">
+                                        <Grid.Background>
+                                            <LinearGradientBrush EndPoint="1,0.95" StartPoint="1,0.01">
+                                                <GradientStop Color="White" Offset="0.1" />
+                                                <GradientStop Color="Teal" Offset="1" />
+                                            </LinearGradientBrush>
+                                        </Grid.Background>
+                                        <Border Name="bd" Padding="{TemplateBinding Padding}">
+                                            <ContentPresenter Margin="5,4,1,3"  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                                        </Border>
+                                        <Thumb Name="PART_HeaderGripper" Template="{StaticResource tmpForThumb}" HorizontalAlignment="Right" Margin="0,0,-1,0"/>
+                                    </Grid>
+
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <EventSetter Event="MouseDoubleClick" Handler="HandleDoubleClick" />
+                    </Style>
+                </namespac:SubListView.Resources>
+
+                <namespac:SubListView.View>
+                    <GridView>
+                        <GridViewColumn  Width="25"  >
+                            <CheckBox Name="checkbox_caozuo"  Click="checkbox_caozuo_Click"  />
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox IsChecked="{Binding Path=IsSelected,RelativeSource={RelativeSource AncestorType={x:Type ListViewItem}}}" Unchecked="CheckBox_Unchecked"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="IP"   DisplayMemberBinding="{Binding Path=IPAddres}"  Width="100" ext:ListViewBehavior.SortField="IPAddres"  ></GridViewColumn>
+                        <GridViewColumn Header="MAC"   DisplayMemberBinding="{Binding Path=MacAddress}"  Width="90" ext:ListViewBehavior.SortField="MacAddress"  ></GridViewColumn>
+                        <GridViewColumn  Header="是否开机" Width="60" ext:ListViewBehavior.SortField="RunStatus">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <RadioButton IsChecked="{Binding Path=RunStatus}" IsEnabled="False" Margin="15 0 0 0"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="汇报时间" DisplayMemberBinding="{Binding Path=LastTime, StringFormat=\{0:yyyyMMdd HH:mm:ss\}}" Width="100" ext:ListViewBehavior.SortField="LastUsedTime"/>
+                        <GridViewColumn Header="注册部门" DisplayMemberBinding="{Binding Path=OfficeName}" Width="150" ext:ListViewBehavior.SortField="OfficeName"/>
+                        <GridViewColumn Header="注册用户" DisplayMemberBinding="{Binding Path=UserName}" Width="110" ext:ListViewBehavior.SortField="UserName"/>
+                        <GridViewColumn Header="登录用户" DisplayMemberBinding="{Binding Path=ExField1}" Width="90" ext:ListViewBehavior.SortField="ExField"/>
+                        <GridViewColumn Header="安装地点" DisplayMemberBinding="{Binding Path=RoomNumber}" Width="90" ext:ListViewBehavior.SortField="RoomNumber"/>
+                        <GridViewColumn Header="操作系统" DisplayMemberBinding="{Binding Path=OSType}" Width="90" ext:ListViewBehavior.SortField="OSType"/>
+                    </GridView>
+                </namespac:SubListView.View>
+            </namespac:SubListView>
+        </ScrollViewer>
+
+        <StackPanel  Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50 0 0 20">
+            <TextBlock Name="tb_count" />
+        </StackPanel>
+    </Grid>
+</Page>
