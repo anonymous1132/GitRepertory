@@ -51,6 +51,19 @@ namespace CaoJin.HNFinanceTool.Content
             set { _wbsCode = value;OnPropertyChanged("WBSCode"); }
         }
 
-        private double EstimateNumber;//
+        private double _estimateNumber;//概算数
+        public double EstimateNumber
+        {
+            get {return _estimateNumber; }
+            set { _estimateNumber=value;OnPropertyChanged("EstimateNumber"); }
+        }
+        
+        private double _internalControl;//内控系数
+        public double InternalControl
+        {
+            get { return _internalControl; }
+            set { _internalControl=value;OnPropertyChanged("InternalControl");}
+        }
+       
     }
 }
