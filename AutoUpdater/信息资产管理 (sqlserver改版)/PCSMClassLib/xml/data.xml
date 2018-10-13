@@ -1,8 +1,0 @@
-<connections>
-  <sqlconnection IntegratedSecurity="false">
-    <DataSource>10.147.186.61</DataSource>
-    <InitialCatalog>caojin</InitialCatalog>
-    <UserID>caojin</UserID>
-    <Password>52pVTMhsvfUKYnrrtrvy8g==</Password>
-  </sqlconnection>
-</connections>

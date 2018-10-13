@@ -1,8 +1,0 @@
-C:\Users\lenovo\Desktop\caojinTool\PCSMClassLib\PCSMClassLib\bin\Release\PCSMClassLib.dll
-C:\Users\lenovo\Desktop\caojinTool\PCSMClassLib\PCSMClassLib\bin\Release\PCSMClassLib.pdb
-C:\Users\lenovo\Desktop\caojinTool\PCSMClassLib\PCSMClassLib\obj\Release\PCSMClassLib.dll
-C:\Users\lenovo\Desktop\caojinTool\PCSMClassLib\PCSMClassLib\obj\Release\PCSMClassLib.pdb
-C:\Users\HOPE\Desktop\PCSMClassLib\PCSMClassLib\bin\Release\PCSMClassLib.dll
-C:\Users\HOPE\Desktop\PCSMClassLib\PCSMClassLib\bin\Release\PCSMClassLib.pdb
-C:\Users\HOPE\Desktop\PCSMClassLib\PCSMClassLib\obj\Release\PCSMClassLib.dll
-C:\Users\HOPE\Desktop\PCSMClassLib\PCSMClassLib\obj\Release\PCSMClassLib.pdb
